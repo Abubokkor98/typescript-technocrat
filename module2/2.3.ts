@@ -20,8 +20,13 @@
   //object
   //genericArray<object>  this is not recommended
 
+  //note: we can also use interface instead of type user
+  type user = {
+    name: string,
+    age: number
+  }
   //this is best practice and recommended
-  const user: genericArray<{ name: string; age: number }> = [
+  const user: genericArray<user> = [
     {
       name: "AB",
       age: 100,
